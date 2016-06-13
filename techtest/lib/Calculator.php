@@ -22,6 +22,21 @@ class Calculator implements iCalculator {
         return ($a / $b);
     }
 
+    public function cubeRoot($a) {
+		return (pow($a, 1/3));
+	}
+
+    public function factorial($a) {
+		$fact = 1;
+    	for($i = 1; $i <= $a ;$i++)
+        	$fact = $fact * $i;
+    	return $fact;
+	}
+
+	public function decToHex($a) {
+		return dechex ($a);
+	}
+
     public function pressNumber($number) {
         $this->stack[] = $number;
     }
@@ -54,6 +69,26 @@ class Calculator implements iCalculator {
         $this->op = "/";
     }
 
+    public function pressCubeRoot() {
+        if(count($this->stack) > 1) {
+            $this->evaluateStack();
+        }
+        $this->op = "∛";
+    }
+    public function pressDecToHex() {
+         if(count($this->stack) > 1) {
+             $this->evaluateStack();
+         }
+         $this->op = "Nn";
+    }
+    public function pressFactorial() {
+         if(count($this->stack) > 1) {
+             $this->evaluateStack();
+         }
+         $this->op = "!";
+    }
+
+
     public function pressEquals() {
         return $this->evaluateStack();
     }
@@ -72,6 +107,16 @@ class Calculator implements iCalculator {
             case "/":
                 $result = $this->divide(array_shift($this->stack), array_shift($this->stack));
                 break;
+
+            case "∛":
+                $result = $this->cubeRoot(array_shift($this->stack), array_shift($this->stack));
+                break;
+            case "!":
+                $result = $this->factorial(array_shift($this->stack), array_shift($this->stack));
+                break;
+            case "Nn":
+                $result = $this->decToHex(array_shift($this->stack), array_shift($this->stack));
+                break;
         }
         $this->clearStack();
         $this->stack[] = $result;
@@ -84,5 +129,7 @@ class Calculator implements iCalculator {
     public function readScreen() {
         $value = array_shift($this->stack);
         return $value;
-    }
+
+}
+
 }

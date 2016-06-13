@@ -55,4 +55,45 @@ class FeatureContext extends BehatContext {
             throw new Exception("Wrong result, actual is [$result]");
         }
     }
+/**
+     * @Given /^I hit "add"$/
+     */
+    public function iHitAdd()
+    {
+         $this->calculator->pressAdd();
+
+    }
+
+/**
+     * @Given /^I hit "subtract"$/
+     */
+    public function iHitSubtract()
+    {
+         $this->calculator->pressSubtract();
+
+    }
+
+
+	/**
+     * @When /^I hit "cuberoot"$/
+     */
+    public function iHitCubeRoot() {
+        $this->calculator->pressCubeRoot();
+    }
+
+	/**
+     * @When /^I hit "factorial"$/
+     */
+    public function iHitFactorial() {
+        $this->calculator->pressFactorial();
+    }
+
+	/**
+     * @When /^I hit "decToHex"$/
+     */
+    public function iHitDecToHex() {
+        $this->calculator->pressDecToHex();
+    }
+
+
 }
