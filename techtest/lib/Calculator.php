@@ -68,7 +68,6 @@ class Calculator implements iCalculator {
         }
         $this->op = "/";
     }
-
     public function pressCubeRoot() {
         if(count($this->stack) > 1) {
             $this->evaluateStack();

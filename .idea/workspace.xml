@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="df234756-7d4b-49fd-8bcd-71b4de8a810e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/techtest/lib/Calculator.php" afterPath="$PROJECT_DIR$/techtest/lib/Calculator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/techtest/tests/acceptance/features/bootstrap/FeatureContext.php" afterPath="$PROJECT_DIR$/techtest/tests/acceptance/features/bootstrap/FeatureContext.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/techtest/tests/acceptance/features/multiply.feature" afterPath="$PROJECT_DIR$/techtest/tests/acceptance/features/multiply.feature" />
     </list>
     <ignored path="sky-qa-tech-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,8 +96,8 @@
       <file leaf-file-name="Calculator.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/techtest/lib/Calculator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.568984">
-              <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.24385026">
+              <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -817,8 +815,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/techtest/lib/Calculator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.568984">
-          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.24385026">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
           <folding />
         </state>
       </provider>
